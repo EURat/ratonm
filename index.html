@@ -53,19 +53,19 @@
     </div>
 
     <script>
-        // Load the IFrame Player API code asynchronously.
+        
         var tag = document.createElement('script');
         tag.src = "https://www.youtube.com/iframe_api";
         var firstScriptTag = document.getElementsByTagName('script')[0];
         firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-        // Create an <iframe> (and YouTube player) after the API code downloads.
+        
         var player;
         function onYouTubeIframeAPIReady() {
             player = new YT.Player('player', {
                 height: '0',
                 width: '0',
-                videoId: 'i3sD9iUSiaU', // Replace with your YouTube live video ID
+                videoId: 'i3sD9iUSiaU', //tek
                 events: {
                     'onReady': onPlayerReady,
                     'onStateChange': onPlayerStateChange
@@ -80,10 +80,10 @@
 
         // The API will call this function when the video player is ready.
         function onPlayerReady(event) {
-            // Do nothing initially
+            // this does nthng
         }
 
-        // The API calls this function when the player's state changes.
+        // ratxD
         function onPlayerStateChange(event) {
             if (event.data == YT.PlayerState.PLAYING) {
                 // Video is playing
